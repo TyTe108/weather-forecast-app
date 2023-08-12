@@ -12,6 +12,7 @@ const App = () => {
     const response = await fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=imperial&appid=${API_KEY}`);
     if (!response.ok) {
       console.error("Error fetching weather data:", await response.text());
+      alert("City not found. Please try a different city or use a zip code.");
       return; // Exit the function if there's an error
     }
   

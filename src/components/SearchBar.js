@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import styles from './SearchBar.module.css';
 
 const SearchBar = ({ onSearch }) => {
   const [city, setCity] = useState('');
@@ -9,10 +10,10 @@ const SearchBar = ({ onSearch }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className={styles.searchBar}>
       <input
         type="text"
-        placeholder="Enter city"
+        placeholder="Enter city, or Zip Code"
         value={city}
         onChange={(e) => setCity(e.target.value)}
       />

@@ -4,7 +4,7 @@
 
 This is a weather forecast application built using React. Users can search for weather information based on location. The app fetches data from the [OpenWeatherMap API](https://openweathermap.org/api).
 
-##Live Demo
+## Live Demo
 [Click here](https://tyler-weather-forecasting.netlify.app)
 
 
